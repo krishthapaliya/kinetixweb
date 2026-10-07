@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Outfit:ExtraLight';
+  src: url('https://static.figma.com/font/Outfit_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Outfit:Regular';
+  src: url('https://static.figma.com/font/Outfit_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Outfit:Medium';
+  src: url('https://static.figma.com/font/Outfit_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Outfit:SemiBold';
+  src: url('https://static.figma.com/font/Outfit_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Outfit:Bold';
+  src: url('https://static.figma.com/font/Outfit_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Urbanist:Regular';
+  src: url('https://static.figma.com/font/Urbanist_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Urbanist:Medium';
+  src: url('https://static.figma.com/font/Urbanist_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Urbanist:SemiBold';
+  src: url('https://static.figma.com/font/Urbanist_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Urbanist:Bold';
+  src: url('https://static.figma.com/font/Urbanist_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Urbanist:ExtraBold';
+  src: url('https://static.figma.com/font/Urbanist_wght__2') format('woff2');
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'DM Sans:9pt Regular';
+  src: url('https://static.figma.com/font/DMSans_opsz_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'DM Sans:Regular';
+  src: url('https://static.figma.com/font/DMSans_opsz_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'DM Sans:SemiBold';
+  src: url('https://static.figma.com/font/DMSans_opsz_wght__1') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes float-lines {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
